@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<style >
+		.cal{
+			position: relative;
+		}
+		.center{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate( -50%,-200%);
+			font-size: 18px;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			opacity: 0.3;
+		}
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li><a href="./index.html">Proyectos</a></li>
+	</ul>
+
+	<div class="cal">
+		<img src="./himagenes/1.PNG" alt="himagene animada de calculadora" width="1000" height="300">
+		<div class="center"> Calduladoara <br>
+			<div class="center"> <h1>Calduladora</h1>
+				<p>Introdusca datos</p>
+				<form method="POST" action="./calculadora.php">
+					<label>dato1:</label>
+					<input type="number" name="dato1">
+					<label>dato2:</label>
+					<input type="number" name="dato2">
+					<input type="submit" name="Enviar"> <br>
+
+
+				</form>
+			</div>
+		</div>
+
+			</body>
+			</html>

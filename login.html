@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<style>
+	input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Comida saludable</h1>
+<ul>
+	<li><a href="./index.html">Home</a></li>
+	<li><a href="./acerca-del-sitio.html">Acerca del sitio</a></li>
+	<li><a href="./galeria-de-himagenes.html">Galeria de Himagenes</a></li>
+	<li><a href="./acerca-del-autor.html">Acerca del autor</a></li>
+	<li><a href="./login.html">Login</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
+</ul>
+<hr>
+<div>
+<h2>Rellene el siguiente formularo</h2>
+<form method="POST" action="./Php./login.php">
+	 	<label>Nombre</label>
+	 	<input type="text" name="nombre"placeholder="Nombre">
+	 	<label>Apellidos</label>
+	 	<input type="text" name="apellido" placeholder="Apellidos">
+	 	<label>Cp</label>
+	 	<input type="number" name="cp" placeholder="codigo postal">
+	 	<label>Edad</label>
+        <input type="number" name="edad" placeholder="Edad">
+        <label>Numero de telefono</label>
+        <input type="number" name="telefono"placeholder="Numero de telefono">
+        <label>Contraseña:</label>
+        <input type="password" name="passw" placeholder="Contraseña">
+             <br>
+	 
+<h3>Seleccione algunas de las siguientes opciones</h3>
+<p>Ambito en el que se desarrolla</p>
+<select>
+	<option value="si">Escolar</option>
+	<option value="si">Laborar</option>
+</select>
+<h2>Enviar</h2>
+<input type="submit" name="Enviar">
+</form>
+</div>
+</body>
+</html>
